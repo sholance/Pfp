@@ -1,5 +1,5 @@
 {
-  "name": "creap",
+  "name": "pfp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-hamburger-menu": "^1.2.1",
     "react-scripts": "3.2.0"
   },
   "scripts": {
@@ -30,5 +31,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sholance/Pfp.git"
+  },
+  "author": "shola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sholance/Pfp/issues"
+  },
+  "homepage": "https://github.com/sholance/Pfp#readme"
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Nav from './Nav';
 
 function App() {
   return (
@@ -8,8 +9,9 @@ function App() {
       <div className="Header__logo">
       <h1> Shola </h1>
       </div>
-      <div className="Header__nav">  
-      <ul className="Nav__linkslinks">
+      <div className="Header__nav">
+      <Nav />  
+        {/*  <ul className="Nav__linkslinks">
         <li className="Nav__link">Home
         </li>
         <li className="Nav__link">
@@ -19,6 +21,7 @@ function App() {
         Contact
         </li>
       </ul>
+  */}
       </div>
       
     </div>
