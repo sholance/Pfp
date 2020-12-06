@@ -1,9 +1,16 @@
+*{
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
+.texts{
+  font-family: 'Paytone One', sans-serif;
+}
 
 .Header__logo {
-  font-size: 0.8em;
+  font-size: 0.7rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -16,22 +23,32 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   color: #222;
-  height: 15vh;
+  height: 10vh;
+  padding:0 4.5% ;
 }
 .Main {
-  height: 85vh;
+  height: 78vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 15%;
+  font-size: 1.1rem;
 }
 .hero__button {
-  border: solid 1.5px #0E6BA8;
-  color: #DB93B0;
+  margin-top: 15%;
+  border: solid 2px #0E6BA8;
+  color: #18206F;
   background: #fff;
-  padding: 10px;
+  padding: 15px;
   font-weight: bold;
+  font-family: 'Cutive Mono', monospace;
+}
+.hero__button:hover {
+  color: #fff;
+  background: #18206F;
+  border: solid 2px #fff;
 }
 .App-link {
   color: #61dafb;
