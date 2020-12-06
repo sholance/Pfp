@@ -1,5 +1,6 @@
 *{
   margin: 0;
+  transition: all ease;
 }
 
 .App {
@@ -10,12 +11,14 @@
 }
 
 .Header__logo {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
+  color: #000;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  span .heart {
+    animation: heartbeat .30s infinite alternate ;
   }
 }
 
@@ -54,11 +57,8 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@keyframes heartbeat {
   to {
-    transform: rotate(360deg);
+    transform: scale(1.5);
   }
 }
