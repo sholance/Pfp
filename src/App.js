@@ -1,6 +1,17 @@
 import React from 'react';
 import './App.css';
 import Nav from './Nav';
+import Home from './Home';
+import Contact from './Contact';
+import Resume from './Resume';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
 
 function App() {
   return (
@@ -11,27 +22,41 @@ function App() {
       </div>
       <div className="Header__nav">
       <Nav />  
-        {/*  <ul className="Nav__linkslinks">
-        <li className="Nav__link">Home
-        </li>
-        <li className="Nav__link">
-        Resume
-        </li>
-        <li className="Nav__link">
-        Contact
-        </li>
-      </ul>
-  */}
+
       </div>
       
     </div>
-    <div className="Main">
-      <div className="Main__hero">
-        <h1 className="texts">Human-Centered Design for the Web with <span className="heart" role="img">💙</span> is what I do
-        </h1>
-        <button className="hero__button">What can shola do for me??</button>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/Contact">Contact me</Link>
+            </li>
+            <li>
+              <Link to="/Resume">My Resume</Link>
+            </li>
+          </ul>
+        </nav>
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/Contact">
+            <Contact />
+          </Route>
+          <Route path="/Resume">
+            <Resume />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
       </div>
-    </div>
+    </Router>
     </div>
   );
 }
