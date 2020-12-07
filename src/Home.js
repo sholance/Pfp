@@ -7,7 +7,7 @@ function Home() {
       <div className="Main__hero">
         <h1 className="texts">
           Human-Centered Design for the Web with{" "}
-          <span className="heart" role="img">
+          <span className="heart" aria-label="love" role="img">
             💙
           </span>{" "}
           is what I do
