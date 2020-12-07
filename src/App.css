@@ -15,6 +15,9 @@
   color: #000;
 
 }
+.heart { 
+  color: #0E6BA8;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   span .heart {
