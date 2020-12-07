@@ -49,6 +49,7 @@
   font-family: 'Cutive Mono', monospace;
 }
 .hero__button:hover {
+  transition: .9s ease;
   color: #fff;
   background: #18206F;
   border: solid 2px #fff;
@@ -61,4 +62,18 @@
   to {
     transform: scale(1.5);
   }
+}
+
+@media (min-width: 768px) {
+  
+  .Main {
+    padding: 0 3%;
+    height: 90vh;
+    font-size: 1.6rem;
+    color: #333232;
+  }
+  .hero__button {
+    margin-top: 10%;
+  }
+  
 }
