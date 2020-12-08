@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="Main">
       <div className="Main__hero">
-        <h1 className="texts">
+        <h1 className="texts hero__text">
           Human-Centered Design for the Web with{" "}
           <span className="heart" aria-label="love" role="img">
             💙
