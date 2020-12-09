@@ -97,16 +97,16 @@
   font-size: 1.1rem;
 }
 .hero__button {
+  position: relative;
   margin-top: 15%;
-  border: solid 3px #300a7733;
   color: #18206f;
   background: #fff;
   padding: 15px;
   font-weight: bold;
   font-family: "Cutive Mono", monospace;
-  border-radius: 8px;
+  border: none;
 }
-.hero__button:afters {
+.hero__button:after {
   content: "";
   position: absolute;
   top: calc(-1 * 3px);
@@ -126,6 +126,7 @@
   );
   z-index: -1;
   animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
 }
 
 .hero__button:hover {
@@ -166,11 +167,25 @@
   .hero__button {
     margin-top: 10%;
   }
+  .change__button {
+    color: #222;
+  }
+}
+.change__wrapper {
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20%;
+  width: 50px;
+  position: fixed;
+  bottom: 1%;
+  left: 4.5%;
+  padding: 1%;
 }
 
 .change__button {
-  border-radius: 40%;
-  width: 50px;
   height: 50px;
-  border: none;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: "Cutive Mono", monospace;
+  color: #333232be;
 }

@@ -6,7 +6,7 @@ export default function Change({ person, onClick, color, index }) {
     '#fffffd', '#ff3fef', '#fff23f', 
     '#ff653f', '#3fff49', '#3fc2ff' 
 ];
-  const [bgcolor, setBgcolor] = useState(colors);
+  const [bgcolor, setBgcolor] = useState(colors[2]);
 
 
   function handleColorChange(e) {
@@ -21,11 +21,14 @@ export default function Change({ person, onClick, color, index }) {
 
   return (
     <>
-     <button className="change__button"
+    <div className="change__wrapper">
+     <h1 className="change__button"
         onClick={handleColorChange}
-      >
-        Hi!
-      </button>
+      > Click<br/>
+        to<br/>
+        Flip
+      </h1>
+      </div>
     </>
   );
 }
