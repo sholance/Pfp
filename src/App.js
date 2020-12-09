@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import Nav from "./Nav";
 import Home from "./Home";
 import Contact from "./Contact";
 import Resume from "./Resume";
@@ -10,8 +9,11 @@ import {
   Route,
   NavLink,
 } from "react-router-dom";
+import Change from './Change';
+
 
 function App() {
+
   return (
     <div className="App">
       <div className="Header">
@@ -64,6 +66,7 @@ function App() {
           </Switch>
         </div>
       </Router>
+            <Change />
     </div>
   );
 }

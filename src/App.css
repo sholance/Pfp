@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   transition: all ease;
   text-decoration: none;
@@ -12,8 +12,8 @@
 .App {
   text-align: center;
 }
-.texts{
-  font-family: 'Paytone One', sans-serif;
+.texts {
+  font-family: "Paytone One", sans-serif;
 }
 
 .Header__logo {
@@ -23,8 +23,7 @@
 }
 
 .my__name {
-  font-family:  'Cutive Mono', monospace;
-  
+  font-family: "Cutive Mono", monospace;
 }
 
 .nav {
@@ -37,23 +36,21 @@
   list-style-type: none;
   margin: 0;
   text-align: right;
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 8%;
   padding-right: 7px;
-
+  padding-bottom: 5px;
 }
 .nav__link {
   text-decoration: none;
   font-size: 1rem;
   color: #222;
-
 }
 
 .active:before {
   content: "";
   display: block;
   margin-right: 10px;
-
 }
 .active:after {
   content: "";
@@ -62,25 +59,23 @@
   height: 0.3rem;
   flex-grow: 2;
   margin-left: 45%;
-
 }
 .active {
   /*display: flex;*/
   color: #222;
-  transition: 1.3s ease;
+  transition: 0.1s ease;
 }
-
 
 .link {
   text-decoration: none;
 }
-.heart { 
-  color: #0E6BA8;
+.heart {
+  color: #0e6ba8;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   span .heart {
-    animation: heartbeat .30s infinite alternate ;
+    animation: heartbeat 0.3s infinite alternate;
   }
 }
 
@@ -91,8 +86,7 @@
   justify-content: space-between;
   color: #222;
   height: 10vh;
-  padding:0 4.5% ;
-
+  padding: 0 4.5%;
 }
 .Main {
   height: 78vh;
@@ -101,22 +95,44 @@
   justify-content: center;
   padding: 0 15%;
   font-size: 1.1rem;
-  background-color: rgba(255, 255, 255, .9);
 }
 .hero__button {
   margin-top: 15%;
-  border: solid 2px #0E6BA8;
-  color: #18206F;
+  border: solid 3px #300a7733;
+  color: #18206f;
   background: #fff;
   padding: 15px;
   font-weight: bold;
-  font-family: 'Cutive Mono', monospace;
+  font-family: "Cutive Mono", monospace;
+  border-radius: 8px;
 }
+.hero__button:afters {
+  content: "";
+  position: absolute;
+  top: calc(-1 * 3px);
+  left: calc(-1 * 3px);
+  height: calc(100% + 3px * 2);
+  width: calc(100% + 3px * 2);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+}
+
 .hero__button:hover {
-  transition: .9s ease;
+  transition: 0.77s ease;
   color: #fff;
-  background: #18206F;
-  border: solid 2px #fff;
+  background: #18206f;
+  border: solid 3px #fff;
 }
 .App-link {
   color: #61dafb;
@@ -128,8 +144,19 @@
   }
 }
 
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @media (min-width: 768px) {
-  
   .Main {
     padding: 0 3%;
     height: 90vh;
@@ -139,5 +166,11 @@
   .hero__button {
     margin-top: 10%;
   }
-  
+}
+
+.change__button {
+  border-radius: 40%;
+  width: 50px;
+  height: 50px;
+  border: none;
 }

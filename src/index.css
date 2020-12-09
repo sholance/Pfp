@@ -4,8 +4,11 @@
 body {
   margin: 0;
   font-family: 'Paytone One', sans-serif;
-  background: #FFFFFD;
-  color: 	#0B0B13;
+  background: #fffffd;
+}
+
+light-mode {
+  background: #fffffd, #ff3fef, #fff23f, #ff653f;
 }
 
 
