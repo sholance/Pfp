@@ -66,8 +66,12 @@
   /*display: flex;*/
   color: #222;
   transition: 0.1s ease;
+  
 }
-
+.nav {
+  position: fixed;
+  z-index: 99999;
+}
 .link {
   text-decoration: none;
 }
@@ -158,6 +162,9 @@
     background-position: 0% 50%;
   }
 }
+.home__main {
+  padding-bottom: 5vh;
+}
 
 @media (min-width: 768px) {
   .Main {
@@ -190,4 +197,22 @@
   font-size: 0.7rem;
   font-family: "Cutive Mono", monospace;
   color: #333232be;
+}
+
+.cards__container {
+  min-height: 100%;
+  margin: auto;
+}
+.cards__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  width: 320px;
+  height: 150px;
+  background: rgb(255, 255, 255, 0.7);
+  border-radius: 10px;
+  margin: 15px;
 }
