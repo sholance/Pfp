@@ -45,7 +45,7 @@ function App() {
                 </NavLink>
               </li>
               <li className="nav__link">
-               <a href="https://ohksam.medium.com" rel="noopenner noreferrer" target="_blank" className="link blog__link" activeClassName="active" to="/Resume">
+               <a href="https://ohksam.medium.com" rel="noopenner noreferrer" target="_new" className="link blog__link" activeClassName="active" to="/Resume">
                   Blog
                 </a>
               </li>

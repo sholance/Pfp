@@ -135,7 +135,7 @@
   transition: 0.66s ease;
   color: #fff;
   background: #18206f;
-  border: solid 4px #fff;
+  border: solid 4px transparent;
 }
 .App-link {
   color: #61dafb;
