@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import "./App.css";
 
 export default function Change({ person, onClick, color, index }) {
+
   const colors = [ 
     '#fffffd', '#ff3fef', '#fff23f', 
     '#ff653f', '#3fff49', '#3fc2ff' 
 ];
-  const [bgcolor, setBgcolor] = useState(colors[2]);
+  const [bgcolor, setBgcolor] = useState(colors[6]);
 
 
   function handleColorChange(e) {

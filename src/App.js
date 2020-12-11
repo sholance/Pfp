@@ -9,11 +9,9 @@ import {
   Route,
   NavLink,
 } from "react-router-dom";
-import Change from './Change';
-
+import Change from "./Change";
 
 function App() {
-
   return (
     <div className="App">
       <div className="Header">
@@ -28,9 +26,7 @@ function App() {
           <nav className="nav">
             <ul className="nav__links">
               <li className="nav__link">
-                <NavLink 
-                exact
-                className="link" activeClassName="active" to="/">
+                <NavLink exact className="link" activeClassName="active" to="/">
                   Home
                 </NavLink>
               </li>
@@ -47,6 +43,11 @@ function App() {
                 <NavLink className="link" activeClassName="active" to="/Resume">
                   Resume
                 </NavLink>
+              </li>
+              <li className="nav__link">
+               <a href="https://ohksam.medium.com" rel="noopenner noreferrer" target="_blank" className="link blog__link" activeClassName="active" to="/Resume">
+                  Blog
+                </a>
               </li>
             </ul>
           </nav>
@@ -66,7 +67,7 @@ function App() {
           </Switch>
         </div>
       </Router>
-            <Change />
+      <Change />
     </div>
   );
 }
