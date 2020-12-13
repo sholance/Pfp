@@ -88,7 +88,7 @@ function Cards() {
           <div className="card__header">Music</div>
           <div className="card__text">
             <p className="card__content">
-              Shhh... it's my escape plan!
+              Definetly my escape plan...
             </p>
           </div>
         </div>
