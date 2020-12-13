@@ -36,12 +36,14 @@ function App() {
                   activeClassName="active"
                   to="/Contact"
                 >
+                  <div className="link__nav">
                   Contact me
+                  </div>
                 </NavLink>
               </li>
               <li className="nav__link">
                 <NavLink className="link" activeClassName="active" to="/Resume">
-                  Resume
+                  <div className="link__nav"> Resume</div>
                 </NavLink>
               </li>
               <li className="nav__link">
@@ -49,7 +51,7 @@ function App() {
                   href="https://ohksam.medium.com"
                   rel="noopenner noreferrer"
                   target="_new"
-                  className="link blog__link"
+                  className="link link__nav blog__link"
                   activeClassName="active"
                   to="/Resume"
                 >
