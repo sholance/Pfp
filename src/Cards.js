@@ -6,20 +6,40 @@ import mobile from "./assets/mobile.svg";
 import techw from "./assets/techw.svg";
 import write from "./assets/write.svg";
 import music from "./assets/music.svg";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
 
 function Cards() {
-  return (
+
+  gsap.registerPlugin(ScrollTrigger); 
+
+    gsap.to(".cards", {
+      scrollTrigger: {
+        trigger:".cards",
+        start: "20px 20%",
+        markers: true,
+        toggleActions: "restart pause reverse pause"
+      },
+      y: 1,
+      opacity: 1,
+      duration: 3
+
+    })
+
+
+    return (
     <div className="cards__container">
       <div className="cards__wrapper">
-        <div className="cards">
+        <div  className="cards">
           <div className="card__media">
             <img src={webdesign2} className="card0" alt="web development" />
           </div>
 
-          <div className="card__header">web dev</div>
+          <div className="card__header">web development</div>
           <div className="card__text">
             <p className="card__content">
-              Building website shouldn't be the hard part of starting out
+              Building websites shouldn't be the hard part of starting out
               online. You should be able to launch your app, websites, and
               products in days, not months.
             </p>
@@ -85,11 +105,11 @@ function Cards() {
             <img src={music} className="card0" alt="web development" />
           </div>
 
+          <div className="card__body">
           <div className="card__header">Music</div>
           <div className="card__text">
-            <p className="card__content">
-              Definetly my escape plan...
-            </p>
+            <p className="card__content">Definetly my escape plan...</p>
+          </div>
           </div>
         </div>
       </div>
