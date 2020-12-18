@@ -22,6 +22,7 @@ function Cards() {
         toggleActions: "restart pause reverse pause"
       },
       y: 1,
+      
       opacity: 1,
       duration: 3
 
